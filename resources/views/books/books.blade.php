@@ -1,9 +1,9 @@
 
-    <div class="container" style="margin-top:40px;">
-        <div class="row">
+   
+        <div class="row" style="margin-top:40px;">
             <div class="col-md-10 offset-md-1">
                 
-                <table class="table table-striped table-bordered" style="background-color: white;">
+                <table class="table table-striped table-bordered table-responsive" style="background-color: white;">
                     <tr>
                         <th class="text-center">ユーザー</th>
                         
@@ -16,7 +16,7 @@
                     @foreach ($books as $book)
                     <tr>
                         <td class="text-center"><img class="mr-3 rounded" src="{{ Gravatar::src($book->user->email, 50) }}">
-                        <br>{!! link_to_route('users.show', $book->user->name, ['id' => $book->user->id]) !!}</td>
+                        <br>    {!! link_to_route('users.show', $book->user->name, ['id' => $book->user->id]) !!}</td>
                         <td class="text-center"><span class="text-muted">{{ $book->created_at }}</span></td>
                         <td class="text-center"><p class="mb-0">{!! nl2br(e($book->author)) !!}</p></td>
                         <td class="text-center"><p class="mb-0">{!! nl2br(e($book->title)) !!}</p></td>
@@ -26,18 +26,11 @@
                                     {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-sm']) !!}
                                 {!! Form::close() !!}
                         @endif</td>
-                        
-        
                     </tr>
                     @endforeach
                 </table>
-            
-                
-            
-            
             </div>
         </div>
-    </div>
     <div class="pagination justify-content-center">
                 {{ $books->links('pagination::bootstrap-4') }}
     </div>

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="row">
 @if(count($users) > 0)
     <div class="col-sm-10 offset-sm-1" style="margin-top: 50pxpx;">
         <table class="table table-striped table-borderd" style="background-color: white;">
@@ -24,6 +24,7 @@
     
 @endif    
 </div>
+
 
             
                

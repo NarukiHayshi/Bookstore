@@ -1,10 +1,13 @@
-<div class="text-center">
-    <h1 style="font-family: cursive; font-size: 100px; color: rgb(211,0,222);">Bookstore</h1>
-   
-    <div>
+<div class="row">
+    <div class="text-center col-md-10 offset-md-1">
+        <h1 style="font-family: cursive; font-size: 80px; color: rgb(211,0,222);">Bookstore</h1>
+    </div>
+    <div class="mx-auto ">
         <img class="mr-2 rounded img-thumbnails" src="{{ Gravatar::src($user->email,50) }}" alt="" style="height:100px; width: 100px;">
     </div>
-    <div class="container">
+</div>
+   
+    
         <div class="row">
             <div class="btn mx-auto d-block" style="margin-top: 20px;">
                 @if(\Auth::id() !== $user->id)
@@ -12,5 +15,6 @@
                 @endif
             </div>
         </div>
-    </div>
-</div>
+    
+
+
