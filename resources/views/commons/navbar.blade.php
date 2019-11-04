@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand" href="/">Bookstore</a>
         
-        <button type="button" class="navbar-toggler" datatoggle="collapse" data-target="#nav-bar">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
             <span class="navbar-toggler-icon"></span>
         </button>
         
@@ -23,8 +23,8 @@
                         </ul>
                     </li>
                 @else
-                    <li>{!! link_to_route('signup.get', 'Signup',[], ['class' => 'nav-link']) !!}</li>
-                    <li>{!! link_to_route('login', 'Log in', [], ['class' => 'nav-link']) !!}</li>
+                    <li class="nav-item">{!! link_to_route('signup.get', 'Signup',[], ['class' => 'nav-link']) !!}</li>
+                    <li class="nav-item">{!! link_to_route('login', 'Log in', [], ['class' => 'nav-link']) !!}</li>
                 @endif        
             </ul>
         </div>
