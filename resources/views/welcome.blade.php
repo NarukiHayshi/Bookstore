@@ -10,15 +10,15 @@
                     <?php
                         $time = intval(date('H'));
                         if (4 <= $time && $time <= 12) {  ?>
-                            <p>おはようございます。{{ $user->name }}さん</p>
-                            <?php } elseif (12 <= $time && $time <= 20) {  ?>
-                            <p>こんにちわ。{{ $user->name }}さん</p>
+                            <p>おはようございます。<br class="br-sp">{{ $user->name }}さん</p>
+                            <?php } elseif (12 <= $time && $time <= 19) {  ?>
+                            <p>こんにちわ。<br class="br-sp">{{ $user->name }}さん</p>
                             <?php } else { ?>
-                            <p>こんばんわ。{{ $user->name }}さん</p>
+                            <p>こんばんわ。<br class="br-sp">{{ $user->name }}さん</p>
                     <?php } ?>
                 </h3>
                 <p style="padding: 20px; font-size: 20px;">
-                どうも、作成者のなるきです。<br>今年の５月からプログラミングの勉強をしていました。<br>自分の好きな本を投稿するアプリです。<br>使える機能: いいね機能/ フォロー機能/ 本の投稿機能/ 投稿の削除<br>自分の好きな本をどんどん投稿していってください！！
+                どうも、作成者の<br class="br-sp">はやしなるきです。<br>今年の５月から<br class="br-sp">プログラミングの勉強を<br class="br-sp">していました。<br>自分の好きな本を<br class="br-sp">投稿するアプリです。<br>使える機能: /いいね機能/ フォロー機能/ 本の投稿機能/ 投稿の削除<br>自分の好きな本を投稿していってください！！
             </p>
             </div>
         </div>
