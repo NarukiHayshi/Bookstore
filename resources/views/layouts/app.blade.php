@@ -5,6 +5,7 @@
         <title>Bookstore</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
 
     <body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfChMuiJWHKkfeEriKALhHv0PpcE_OxTajlk4HqRr8ivmjGvYJ'); background-size: cover; background-attachment: fixed;">
