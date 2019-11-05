@@ -6,7 +6,7 @@
         @include('commons.pagitop',['user' => $user])
         <div>
             <div style="margin: 25px; background-color: white;" class="text-center">
-                <h2 style="padding-top: 20px; border-bottom: 2px solid #049;">
+                <h3 style="padding-top: 20px; border-bottom: 2px solid #049;">
                     <?php
                         $time = intval(date('H'));
                         if (4 <= $time && $time <= 12) {  ?>
@@ -16,7 +16,7 @@
                             <?php } else { ?>
                             <p>こんばんわ。{{ $user->name }}さん</p>
                     <?php } ?>
-                </h2>
+                </h3>
                 <p style="padding: 20px; font-size: 20px;">
                 どうも、作成者のなるきです。<br>今年の５月からプログラミングの勉強をしていました。<br>自分の好きな本を投稿するアプリです。<br>使える機能: いいね機能/ フォロー機能/ 本の投稿機能/ 投稿の削除<br>自分の好きな本をどんどん投稿していってください！！
             </p>
