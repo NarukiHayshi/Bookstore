@@ -26,7 +26,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('post', 'UsersController@post')->name('books.get');
     Route::post('post', 'UsersController@post')->name('books.post');
     Route::get('timeline', 'BooksController@index')->name('timeline.get');
-    Route::get('paginate', 'SearchController@index')->name('search.index');
+    
     
     
     
